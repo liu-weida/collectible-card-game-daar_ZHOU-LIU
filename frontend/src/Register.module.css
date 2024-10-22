@@ -1,0 +1,58 @@
+.resultContainer {
+    text-align: center;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 一行5张卡牌 */
+    gap: 10px; /* 卡牌之间的间距 */
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 800px; /* 设置最大宽度，居中 */
+}
+
+.cardItem {
+    width: 15px; /* 缩小卡牌展示大小 */
+    height: 22px;
+    perspective: 1000px; /* 添加3D效果 */
+    position: relative;
+    transition: transform 0.6s; /* 3D 翻转动画 */
+    transform-style: preserve-3d;
+}
+
+.cardFace {
+    width: 15px;
+    height: 22px;
+    position: absolute;
+    backface-visibility: hidden; /* 隐藏背面 */
+    top: 0;
+    left: 0;
+}
+
+.cardFront {
+    transform: rotateY(180deg); /* 正面旋转 */
+}
+
+.flipped {
+    transform: rotateY(180deg); /* 翻转的卡牌旋转 */
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+}
+
+.confirmButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.confirmButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

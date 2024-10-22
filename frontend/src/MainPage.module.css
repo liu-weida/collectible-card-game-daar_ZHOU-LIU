@@ -1,0 +1,32 @@
+/* MainPage.module.css */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50; /* 绿色按钮颜色 */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* 深绿色按钮悬停颜色 */
+}
