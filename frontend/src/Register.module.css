@@ -7,8 +7,8 @@
 }
 
 .image {
-    width: 90%; /* 图片宽度设为屏幕宽度的90%，可根据需要调整 */
-    height: auto; /* 保持图片的宽高比例 */
-    object-fit: contain; /* 确保图片按比例缩放，适应容器 */
-    cursor: pointer; /* 鼠标悬停时显示为手型，表示图片可点击 */
+    width: 90%; 
+    height: auto; 
+    object-fit: contain; 
+    cursor: pointer; 
 }
