@@ -9,11 +9,11 @@ const deployGame: DeployFunction = async function (hre: HardhatRuntimeEnvironmen
     // 部署 Main 合约
     const mainDeployment = await deploy("Main", {
         from: deployer,
-        args: [], // Main 合约构造函数没有参数
+        args: [], 
         log: true,
     });
 
-    console.log(`Main 合约已部署到地址：${mainDeployment.address}`);
+    console.log(`Contrat principal déployé pour répondre à：${mainDeployment.address}`);
 
     // 获取 Main 合约实例
     const mainContract = await ethers.getContractAt("Main", mainDeployment.address);
@@ -21,10 +21,10 @@ const deployGame: DeployFunction = async function (hre: HardhatRuntimeEnvironmen
     // 确认部署者是合约的所有者
     const ownerAddress = await mainContract.owner();
     if (ownerAddress !== deployer) {
-        throw new Error("部署者不是 Main 合约的所有者，请检查部署过程。");
+        throw new Error("Le déployeur n'est pas le propriétaire du contrat principal, vérifiez le processus de déploiement.");
     }
 
-    console.log(`Main 合约的所有者为：${ownerAddress}`);
+    console.log(`Les principaux contrats sont détenus par：${ownerAddress}`);
 };
 
 export default deployGame;
