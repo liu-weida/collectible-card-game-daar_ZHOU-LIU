@@ -23,21 +23,21 @@
 }
 
 .cardItem {
-    width: 100px; /* 调整卡片的宽度 */
-    height: 150px; /* 调整卡片的高度 */
+    width: 100px;
+    height: 150px; 
     perspective: 1000px;
     cursor: pointer;
     transition: transform 0.6s;
 }
 
 .cardItem:hover {
-    transform: scale(1.1); /* 悬停时放大效果 */
+    transform: scale(1.1); 
 }
 
 .cardImage {
-    width: 100%; /* 设置卡片图片宽度自适应 */
-    height: 100%; /* 设置卡片图片高度自适应 */
-    border-radius: 8px; /* 圆角效果 */
+    width: 100%;
+    height: 100%; 
+    border-radius: 8px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
