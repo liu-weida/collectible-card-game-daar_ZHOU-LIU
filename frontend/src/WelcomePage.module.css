@@ -1,0 +1,17 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer; /* 鼠标悬停时显示点击手型 */
+}
+
+.image {
+    width: 90%; /* 图片宽度设为屏幕宽度的90% */
+    height: 90%; /* 图片高度设为屏幕高度的90% */
+    object-fit: contain; /* 保持图片比例，不进行裁剪 */
+    border: 2px solid #ccc; /* 可选：添加一个边框来增强视觉效果 */
+    border-radius: 10px; /* 可选：添加圆角以柔化图片边缘 */
+}
