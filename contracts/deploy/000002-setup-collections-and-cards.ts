@@ -37,7 +37,7 @@ const setupCollectionsAndBoosters: DeployFunction = async function (hre: Hardhat
     console.log("Fetching Pokemon Base Set cards...");
     let sets = await PokemonTCG.getAllSets();
 
-    for (let i = 0; i < 3 && i < sets.length; i++) {
+    for (let i = 3; i < 6 && i < sets.length; i++) {
         const set_name = sets[i];
 
         let baseSetCards;
